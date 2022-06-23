@@ -1,0 +1,905 @@
+
+/*MOBILE FIRST*/
+
+@media (min-width: 280px) and (max-width: 600px) {
+
+    /*MENU-MOBILE*/
+
+    .menu-mobile{
+        position: fixed;
+        z-index: 999;
+        height: 100%;
+        top: 0;
+    }
+
+    .menu-mobile label{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .nav-menu ul{
+        position: absolute;
+        width: 100%;
+        top:60px;
+        padding-left: 20px;
+    }
+
+    .menu-mobile img{
+        width: 60px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nav-menu{
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 300px;
+        left: -350px;
+        height: 100%;
+        position: relative;
+    }
+
+    .nav-menu a{
+        display: block;
+        padding: 20px 5px;
+        color: #fff;
+    }
+
+    .nav-menu a:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .nav-menu{
+        transform: translateX(350px);
+        transition: all 0.4s;
+    }
+    .header-img{
+        padding: 0 20px;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .banner h1{
+        font-size: 28px;  
+        margin: 30px 0; 
+        padding: 30px 0; 
+    }
+
+    .banner p{
+        font-size: 20px;        
+    }
+
+    .banner-content h2{
+        font-size: 22px;
+        padding: 20px;
+    }    
+
+    .empresa{
+        padding:20px;
+        margin-top: 20px; 
+    }
+
+    .services{
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .info-text h3{
+        font-size: 24px;
+        margin-bottom: 30px;   
+    }
+
+    /*PÁGINA OFICINA*/
+
+    .oficina{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .w-30{
+        width: 100%;
+    }
+
+    .w-70{
+        width: 100%;
+    }
+
+    .list{
+        margin-top: 50px;
+    }
+
+    .list li{
+        padding-top: 30px;
+    }
+
+    /*PÁGINA CONTATO*/
+
+    .contato .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    .box-contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .contato{
+        margin-top: 150px;
+    }
+
+    .contato-info{
+        padding-right: 50px;
+    }
+
+    .contato h3{
+        font-size: 30px;
+        font-weight: lighter;
+        margin-bottom: 30PX;
+    }
+
+    .contato p{
+        font-size: 18px;
+        color: #333;
+    }
+
+    .contato-info h4, .contato-form h4{
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .contato-info p, .contato-form p{
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-contato input[type=text]{
+        background-color: transparent;
+        border-top: 0;
+        width: auto;
+        border-bottom: 1px solid #555;
+    }
+
+    .form-contato input[type=button]{
+        width: 100%;
+        text-transform: uppercase;
+        padding: 15px;
+    }
+
+    textarea{
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 728px) {
+
+    /*MENU-MOBILE*/
+
+    .menu-mobile{
+        position: fixed;
+        z-index: 999;
+        height: 100%;
+    }
+
+    .menu-mobile label{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .nav-menu ul{
+        position: absolute;
+        width: 100%;
+        top:60px;
+        padding-left: 20px;
+    }
+
+    .menu-mobile img{
+        width: 60px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nav-menu{
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 300px;
+        left: -350px;
+        height: 100%;
+        position: relative;
+    }
+
+    .nav-menu a{
+        display: block;
+        padding: 20px 5px;
+        color: #fff;
+    }
+
+    .nav-menu a:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .nav-menu{
+        transform: translateX(350px);
+        transition: all 0.4s;
+    }
+
+    .header-img{
+        padding: 0 20px;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .banner h1{
+        font-size: 28px;  
+        margin-top: 30px; 
+        padding: 20px 0; 
+    }
+
+    .banner p{
+        font-size: 20px;        
+    }
+
+    .banner-content h2{
+        font-size: 24px;
+        padding: 20px;
+    }    
+
+    .empresa{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0; 
+    }
+
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .info-text h3{
+        font-size: 24px;
+        margin-bottom: 30px;   
+    }
+
+    .posts{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /*PÁGINA OFICINA*/
+
+    .oficina{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .w-30{
+        width: 100%;
+    }
+
+    .w-70{
+        width: 100%;
+    }
+
+    .list{
+        margin-top: 50px;
+    }
+
+    .list li{
+        padding-top: 30px;
+    }
+
+    /*PÁGINA CONTATO*/
+
+    .contato .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    .box-contato{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .contato{
+        margin-top: 150px;
+    }
+
+    .contato-info{
+        padding-right: 50px;
+    }
+
+    .contato h3{
+        font-size: 30px;
+        font-weight: lighter;
+        margin-bottom: 30PX;
+    }
+
+    .contato p{
+        font-size: 18px;
+        color: #333;
+    }
+
+    .contato-info h4, .contato-form h4{
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .contato-info p, .contato-form p{
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .atendimento{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-contato input[type=text]{
+        background-color: transparent;
+        border-top: 0;
+        width: auto;
+        border-bottom: 1px solid #555;
+    }
+
+    .form-contato input[type=button]{
+        width: 65%;
+        text-transform: uppercase;
+        padding: 15px;
+    }
+
+    textarea{
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+}
+
+@media (min-width: 729px) and (max-width: 1024px) {
+
+    /*MENU-MOBILE*/
+
+    .menu-mobile{
+        position: fixed;
+        z-index: 999;
+        height: 100%;
+        display: none;
+    }
+
+    .menu-mobile label{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .nav-menu ul{
+        position: absolute;
+        width: 100%;
+        top:60px;
+        padding-left: 20px;
+    }
+
+    .menu-mobile img{
+        width: 60px;
+    }
+
+    .nav-menu{
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 300px;
+        left: -350px;
+        height: 100%;
+        position: relative;
+    }
+
+    .nav-menu a{
+        display: block;
+        padding: 20px 5px;
+        color: #fff;
+    }
+
+    .nav-menu a:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .nav-menu{
+        transform: translateX(350px);
+        transition: all 0.4s;
+    }
+
+    /*HERO SECTION*/
+
+    .container, .hero .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .header .container .container-header{
+        margin-top: -20px;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .header-img{
+        padding: 0 20px;
+    }
+
+    .banner h1{
+        font-size: 50px;   
+        margin: 80px 0; 
+    }
+
+    .banner p{
+        font-size: 26px;
+        padding-top: 50px;
+    }
+
+    .banner-content h2{
+        padding: 20px;
+    }
+
+    .card-service{
+        background-color: #fff;
+        width: 45%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 25px;
+        display: flex;
+        margin: 20px 0;
+    }
+
+    .card{
+        width: 45%;
+        margin: 10px;
+    }
+
+    .empresa{
+        padding: 0 20px;
+    }
+
+    .services{
+        margin-top: 10px;
+        padding: 60px 20px;
+        background: rgb(232, 235, 244);;
+    }
+
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .info-text h3{
+        font-size: 24px;
+        margin-bottom: 30px;   
+    }
+
+    .posts{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /*PÁGINA OFICINA*/
+
+    .oficina{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .w-30{
+        width: 50%;
+    }
+
+    .w-70{
+        width: 50%;
+    }
+
+    .list{
+        margin-top: 50px;
+    }
+
+    .list li{
+        padding-top: 30px;
+    }
+
+    /*PÁGINA CONTATO*/
+
+     .contato .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    .box-contato{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .contato{
+        margin-top: 150px;
+    }
+
+    .contato-info{
+        padding-right: 50px;
+    }
+
+    .contato h3{
+        font-size: 30px;
+        font-weight: lighter;
+        margin-bottom: 30PX;
+    }
+
+    .contato p{
+        font-size: 18px;
+        color: #333;
+    }
+
+    .contato-info h4, .contato-form h4{
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .contato-info p, .contato-form p{
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .atendimento{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-contato input[type=text]{
+        background-color: transparent;
+        border-top: 0;
+        width: auto;
+        border-bottom: 1px solid #555;
+    }
+
+    .form-contato input[type=button]{
+        width: 65%;
+        text-transform: uppercase;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    
+    .container, .hero .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    .header .container .container-header{
+        margin-top: -20px;
+    }
+    .nav{
+        line-height: 85px;
+    }
+
+    /*MENU-MOBILE*/
+
+    .menu-mobile{
+        position: fixed;
+        z-index: 999;
+        height: 100%;
+        display: none;
+    }
+
+    .menu-mobile label{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .nav-menu ul{
+        position: absolute;
+        width: 100%;
+        top:60px;
+        padding-left: 20px;
+    }
+
+    .menu-mobile img{
+        width: 60px;
+    }
+
+    .nav-menu{
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 300px;
+        left: -350px;
+        height: 100%;
+        position: relative;
+    }
+
+    .nav-menu a{
+        display: block;
+        padding: 20px 5px;
+        color: #fff;
+    }
+
+    .nav-menu a:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .nav-menu{
+        transform: translateX(350px);
+        transition: all 0.4s;
+    }
+
+    /*HERO SECTION*/
+
+    .banner h1{
+        font-size: 5em;
+        margin-top: 30px; 
+        padding: 20px 0; 
+        text-align: left;
+    }
+
+    .banner p{
+        font-size: 20px;  
+        text-align: left;      
+    }
+
+    .banner-content h2{
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .empresa{
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-service{
+        background-color: #fff;
+        width: 32%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+    }
+
+    .info-text{
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .info-text h3{
+        font-size: 40px;
+        margin-right: 20px;
+        line-height: 60px;
+        font-weight: lighter;
+    }
+
+    .cards .card{
+        width: 31%;
+    }
+
+    .card{
+        width: 32%;
+        margin: 10px;
+    }
+
+    .card-service{
+        padding: 35px;
+    }
+
+    .cols .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col{
+        width: 32%;
+        margin-bottom: 20px;
+    }
+
+    /*PÁGINA OFICINA*/
+
+    .oficina{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .w-30{
+        width: 50%;
+    }
+
+    .w-70{
+        width: 50%;
+    }
+
+    .list{
+        margin-top: 50px;
+    }
+
+    .list li{
+        padding-top: 30px;
+    }
+
+    /*PÁGINA CONTATO*/
+
+    .box-contato{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .contato{
+        margin-top: 150px;
+    }
+
+    .contato-info{
+        padding-right: 50px;
+    }
+
+    .contato h3{
+        font-size: 30px;
+        font-weight: lighter;
+        margin-bottom: 30PX;
+    }
+
+    .contato p{
+        font-size: 18px;
+        color: #333;
+    }
+
+    .contato-info h4, .contato-form h4{
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .contato-info p, .contato-form p{
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .atendimento{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .atendimento h5{
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #444;
+    }
+
+    .atendimento a{
+        color: red;
+    }
+
+    .box2{
+        margin-right: 60px;
+    }
+
+    .form-contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group{
+        width: 33,33%;
+        margin-right: 20px;
+    }
+
+
+    .form-group .obrigatorio{
+        color: red;
+    }
+
+    .form-contato input[type=text]{
+        background-color: transparent;
+        border-top: 0;
+        width: 100%;
+        border-bottom: 1px solid #555;
+    }
+
+    .form-contato textarea{
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        resize: vertical;
+        width: 100%;
+    }
+
+    .form-contato input[type=button]{
+        width: 40%;
+        text-transform: uppercase;
+        padding: 15px;
+    }
+}
